@@ -1,15 +1,7 @@
-# The SNGR Studio's [Astro](https://astro.build) Template for Production
+# Website Resmi CV. Sentral Bisnis Digital
 
-The template is created using Astro and a pinch of React. Batteries included: SASS, TailwindCSS + DaisyUI, PostCSS with Autoprefixer and Font Magician plugin.
-
-## Live Example
-
-https://sngrstudio-astro-template.netlify.app/
-
-## Deploy on Netlify
-
-[![Netlify's Magic Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/sngrstudio/astro-prod-template)
+Website resmi dari CV. Sentral Bisnis Digital.
 
 ## Miscellaneous
 
-This template is created as a base for future SNGR Studio's template for Astro projects.
+Powered by [Astro](https://astro.build). Generated from [SNGR Studio's Astro template](https://github.com/sngrstudio/astro-prod-template).
