@@ -1,0 +1,19 @@
+---
+import BaseLayout from '~/layouts/base.astro'
+import Hero from '~/components/home/hero'
+import { Content } from '../../README.md'
+---
+
+<BaseLayout>
+  <Hero>
+  <Content />
+  </Hero>
+</BaseLayout>
+
+<style lang="scss">
+  @use '../styles/fonts';
+  
+  :global(h1, h2, h3) {
+    @extend %heading;
+  }
+</style>

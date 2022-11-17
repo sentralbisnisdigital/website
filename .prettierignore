@@ -1,0 +1,23 @@
+# build output
+dist/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# netlify
+.netlify
+
+# public dir
+public
+
+# readme
+README.md
+
+# pnpm lockfile
+pnpm-lock.yaml
