@@ -21,6 +21,7 @@
     "@svgr/core": "6.5.1",
     "@tailwindcss/typography": "0.5.8",
     "astro": "1.6.12",
+    "astro-compress": "^1.1.24",
     "autoprefixer": "10.4.13",
     "daisyui": "2.42.1",
     "postcss": "8.4.19",
