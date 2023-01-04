@@ -3,19 +3,19 @@ import Layout from '~/components/layouts/layout.astro'
 import Hero from '~/components/home/hero'
 import { Content } from '../../README.md'
 
-const title = "Sentral Bisnis Digital"
+const title = 'Sentral Bisnis Digital'
 ---
 
 <Layout>
   <Fragment slot="head"><title>{title}</title></Fragment>
   <Hero>
-  <Content />
+    <Content />
   </Hero>
 </Layout>
 
 <style lang="scss">
   @use '../styles/fonts';
-  
+
   :global(h1, h2, h3) {
     @extend %heading;
   }
