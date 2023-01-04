@@ -1,11 +1,10 @@
 ---
+import Meta from './meta.astro'
 import Icons from './icons.astro'
 ---
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <meta name="generator" content={Astro.generator} />
+  <Meta />
   <Icons />
   <slot />
 </head>
