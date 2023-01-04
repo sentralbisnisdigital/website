@@ -1,14 +1,17 @@
 ---
-import BaseLayout from '~/layouts/base.astro'
+import Layout from '~/components/layouts/layout.astro'
 import Hero from '~/components/home/hero'
 import { Content } from '../../README.md'
+
+const title = "Sentral Bisnis Digital"
 ---
 
-<BaseLayout>
+<Layout>
+  <Fragment slot="head"><title>{title}</title></Fragment>
   <Hero>
   <Content />
   </Hero>
-</BaseLayout>
+</Layout>
 
 <style lang="scss">
   @use '../styles/fonts';

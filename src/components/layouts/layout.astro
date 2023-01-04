@@ -1,0 +1,15 @@
+---
+import BaseLayout from "./base.astro";
+import Main from '~/components/site/main.astro'
+
+import '~/styles/global.scss'
+import "@fontsource/righteous"
+---
+<BaseLayout>
+    <Fragment slot="head">
+        <slot name="head" />
+    </Fragment>
+    <Main>
+        <slot />
+      </Main>
+</BaseLayout>
