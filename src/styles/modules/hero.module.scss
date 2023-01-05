@@ -1,0 +1,29 @@
+@import '../fonts';
+
+.__section {
+  @apply max-w-screen-xl mx-auto px-8;
+}
+
+.__grid {
+  @apply grid min-h-screen items-center;
+  @apply grid-cols-1 md:grid-cols-2;
+  @apply gap-2 md:gap-4;
+}
+
+.__headline {
+  @apply self-start md:self-auto;
+  @apply order-2 md:order-1;
+  @apply space-y-3 md:space-y-6;
+}
+
+.__heading {
+  @extend %heading;
+  @apply font-extrabold;
+  @apply text-4xl sm:text-6xl md:text-7xl 2xl:text-8xl;
+}
+
+.__illustration {
+  @apply text-[#ff5000];
+  @apply self-end md:self-auto;
+  @apply order-1 md:order-2;
+}

@@ -1,18 +1,23 @@
 import type { FC } from 'react'
+import { ReactComponent as DigitalTransformIllustration } from '~/assets/svg/digital-transform.svg'
+
+import style from '~/styles/modules/hero.module.scss'
+
+const HEADLINE = {
+  title: 'Semangat Transformasi Digital.',
+  text: 'Kami adalah sentra kebutuhan bisnis digital Anda: Website, Aplikasi, Jaringan, Infrastruktur, segala rupa.',
+}
 
 export const Hero: FC = () => (
-  <section className="max-w-screen-xl mx-auto px-8">
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 min-h-screen items-center">
-      <article className="space-y-6">
-        <h1 className="font-extrabold text-4xl md:text-6xl">
-          Semangat Transformasi Digital.
-        </h1>
-        <p className="text-2xl">
-          Kami adalah desainer dan developer web terbaik yang berbasis di
-          Sampit, Kalimantan Tengah.
-        </p>
+  <section className={style.__section}>
+    <div className={style.__grid}>
+      <article className={style.__headline}>
+        <h1 className={style.__heading}>{HEADLINE.title}</h1>
+        <p className="text-lg md:text-2xl 2xl:text-3xl">{HEADLINE.text}</p>
       </article>
-      <aside></aside>
+      <div className={style.__illustration}>
+        <DigitalTransformIllustration />
+      </div>
     </div>
   </section>
 )

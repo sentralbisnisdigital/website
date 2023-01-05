@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/react': 1.2.2
+  '@fontsource/red-hat-display': ^4.5.11
   '@fontsource/righteous': 4.5.7
   '@iconify/json': 2.1.146
   '@svgr/core': 6.5.1
@@ -19,9 +20,11 @@ specifiers:
   tailwindcss: 3.2.4
   typescript: 4.9.3
   unplugin-icons: 0.14.14
+  vite-plugin-svgr: ^2.4.0
 
 dependencies:
   '@astrojs/react': 1.2.2_gqczyrwmhlwpr6z64d3xh3wv54
+  '@fontsource/red-hat-display': 4.5.11
   '@fontsource/righteous': 4.5.7
   '@iconify/json': 2.1.146
   '@svgr/core': 6.5.1
@@ -36,6 +39,7 @@ dependencies:
   sass: 1.56.1
   tailwindcss: 3.2.4_postcss@8.4.19
   unplugin-icons: 0.14.14_@svgr+core@6.5.1
+  vite-plugin-svgr: 2.4.0_vite@3.2.4
 
 devDependencies:
   '@types/node': 18.11.10
@@ -459,6 +463,10 @@ packages:
     dev: false
     optional: true
 
+  /@fontsource/red-hat-display/4.5.11:
+    resolution: {integrity: sha512-4Cfa+YDcJVxHJV2pCEml3GEyQ90OmRaem2MH1Da82Por9n47/n/64/hFY6lHA0RR6njLOJnqNqLF5wW0llyKww==}
+    dev: false
+
   /@fontsource/righteous/4.5.7:
     resolution: {integrity: sha512-tIDEC1ygwIGiNPToM1XRRU6YqUdQ8S7NzrYNW1gcE1cN9vU7x7zcgNRy8jALjolgdAWJxM78LnEKDUa7mnOPlw==}
     dev: false
@@ -587,6 +595,20 @@ packages:
     dependencies:
       '@proload/core': 0.3.3
       tsm: 2.2.2
+    dev: false
+
+  /@rollup/pluginutils/5.0.2:
+    resolution: {integrity: sha512-pTd9rIsP92h+B6wWwFbW8RkZv4hiR/xKsqre4SIuAOaOEQRxi0lqLke9k2/7WegC85GgUs9pjmOjCUi3In4vwA==}
+    engines: {node: '>=14.0.0'}
+    peerDependencies:
+      rollup: ^1.20.0||^2.0.0||^3.0.0
+    peerDependenciesMeta:
+      rollup:
+        optional: true
+    dependencies:
+      '@types/estree': 1.0.0
+      estree-walker: 2.0.2
+      picomatch: 2.3.1
     dev: false
 
   /@svgr/babel-plugin-add-jsx-attribute/6.5.1_@babel+core@7.19.6:
@@ -2105,6 +2127,10 @@ packages:
     dependencies:
       '@types/estree-jsx': 1.0.0
       '@types/unist': 2.0.6
+    dev: false
+
+  /estree-walker/2.0.2:
+    resolution: {integrity: sha512-Rfkk/Mp/DL7JVje3u18FxFujQlTNR2q6QfMSMB7AvCBx91NGj/ba3kCfza0f6dVDbw7YlRf/nDrn7pQrCCyQ/w==}
     dev: false
 
   /events/3.3.0:
@@ -4612,6 +4638,19 @@ packages:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.2
       vfile-message: 3.1.2
+    dev: false
+
+  /vite-plugin-svgr/2.4.0_vite@3.2.4:
+    resolution: {integrity: sha512-q+mJJol6ThvqkkJvvVFEndI4EaKIjSI0I3jNFgSoC9fXAz1M7kYTVUin8fhUsFojFDKZ9VHKtX6NXNaOLpbsHA==}
+    peerDependencies:
+      vite: ^2.6.0 || 3 || 4
+    dependencies:
+      '@rollup/pluginutils': 5.0.2
+      '@svgr/core': 6.5.1
+      vite: 3.2.4_clvymlzunojxjbv3h6i2warera
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
     dev: false
 
   /vite/3.2.4_clvymlzunojxjbv3h6i2warera:
