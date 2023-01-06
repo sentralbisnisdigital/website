@@ -19,7 +19,6 @@
 .__heading {
   @extend %heading;
   @apply font-extrabold;
-  @apply text-4xl sm:text-6xl md:text-7xl 2xl:text-8xl;
 }
 
 .__illustration {
