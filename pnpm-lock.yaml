@@ -4,13 +4,13 @@ specifiers:
   '@astrojs/react': 1.2.2
   '@fontsource/red-hat-display': 4.5.11
   '@fontsource/righteous': 4.5.7
-  '@iconify/json': 2.2.4
+  '@iconify/json': 2.2.6
   '@svgr/core': 6.5.1
-  '@tailwindcss/typography': 0.5.8
+  '@tailwindcss/typography': 0.5.9
   '@types/node': 18.11.18
   '@types/react': 18.0.26
-  astro: 1.9.1
-  astro-compress: 1.1.25
+  astro: 1.9.2
+  astro-compress: 1.1.26
   astro-critters: 1.1.25
   autoprefixer: 10.4.13
   daisyui: 2.46.1
@@ -27,11 +27,11 @@ dependencies:
   '@astrojs/react': 1.2.2_xxgjdrtkyhyrdy3zuutt36nlc4
   '@fontsource/red-hat-display': 4.5.11
   '@fontsource/righteous': 4.5.7
-  '@iconify/json': 2.2.4
+  '@iconify/json': 2.2.6
   '@svgr/core': 6.5.1
-  '@tailwindcss/typography': 0.5.8_tailwindcss@3.2.4
-  astro: 1.9.1_ovmyjmuuyckt3r3gpaexj2onji
-  astro-compress: 1.1.25
+  '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
+  astro: 1.9.2_ovmyjmuuyckt3r3gpaexj2onji
+  astro-compress: 1.1.26
   astro-critters: 1.1.25
   autoprefixer: 10.4.13_postcss@8.4.21
   daisyui: 2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44
@@ -469,8 +469,8 @@ packages:
     resolution: {integrity: sha512-tIDEC1ygwIGiNPToM1XRRU6YqUdQ8S7NzrYNW1gcE1cN9vU7x7zcgNRy8jALjolgdAWJxM78LnEKDUa7mnOPlw==}
     dev: false
 
-  /@iconify/json/2.2.4:
-    resolution: {integrity: sha512-QjJJD7tsggk0hWWDr8z5mBND52kI63NLNhubYAPZzGLMjDQ5rJ1HOBHoJ1P2O6450CYuYp7tfc4W0zJ9/QfUiA==}
+  /@iconify/json/2.2.6:
+    resolution: {integrity: sha512-fRP5PwXvX0PAGne1/xHvd6zVYiHq9dQzdvhhxamwJuNjoIVRWNNP5y465NkxybzEX94kn2JnoULkA9kbZkXoqA==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.0.0
@@ -734,8 +734,8 @@ packages:
       - supports-color
     dev: false
 
-  /@tailwindcss/typography/0.5.8_tailwindcss@3.2.4:
-    resolution: {integrity: sha512-xGQEp8KXN8Sd8m6R4xYmwxghmswrd0cPnNI2Lc6fmrC3OojysTBJJGSIVwPV56q4t6THFUK3HJ0EaWwpglSxWw==}
+  /@tailwindcss/typography/0.5.9_tailwindcss@3.2.4:
+    resolution: {integrity: sha512-t8Sg3DyynFysV9f4JDOVISGsjazNb48AeIYQwcL+Bsq5uf4RYL75C1giZ43KISjeDGBaTN3Kxh7Xj/vRSMJUUg==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
     dependencies:
@@ -1008,8 +1008,8 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /astro-compress/1.1.25:
-    resolution: {integrity: sha512-67AZL1cQ/GF0bEEOpzSRzJiHVHUExSy0mCt3kbh4maWP5ikdBmv4I4BlFhlBWOmS/POukSwtxHbkP2l9bALdbQ==}
+  /astro-compress/1.1.26:
+    resolution: {integrity: sha512-KsxgWBXxZ3LpGaX487pczlFtKKuW4jgi2WD/2CHmNTq+JCuuZQs8Q4aE+Z6gpKrTWDm9fQdDciM90pd0GOmqNw==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
@@ -1029,8 +1029,8 @@ packages:
       files-pipeline: 0.0.2
     dev: false
 
-  /astro/1.9.1_ovmyjmuuyckt3r3gpaexj2onji:
-    resolution: {integrity: sha512-aQ6rvAP4w4VCgipVYA/zPmnkuTbFrMZ/+x/sAv2W1uJHWU2iQmrVRrrjUFJl+i1TuYYlHAuC2vKK7aRyXCjD4A==}
+  /astro/1.9.2_ovmyjmuuyckt3r3gpaexj2onji:
+    resolution: {integrity: sha512-L+Ma0eR0Aa6QZg7RF0lEs+106Ye1/zukvtq3KtsYIogAojltlwllwU9X5CwMBzFwA55NxpNp4gSRh5US/xb+8Q==}
     engines: {node: ^14.18.0 || >=16.12.0, npm: '>=6.14.0'}
     hasBin: true
     dependencies:
