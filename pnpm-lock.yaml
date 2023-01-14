@@ -10,8 +10,8 @@ specifiers:
   '@types/node': 18.11.18
   '@types/react': 18.0.26
   astro: 1.9.2
-  astro-compress: 1.1.26
-  astro-critters: 1.1.25
+  astro-compress: 1.1.27
+  astro-critters: 1.1.26
   autoprefixer: 10.4.13
   daisyui: 2.46.1
   postcss: 8.4.21
@@ -31,8 +31,8 @@ dependencies:
   '@svgr/core': 6.5.1
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
   astro: 1.9.2_ovmyjmuuyckt3r3gpaexj2onji
-  astro-compress: 1.1.26
-  astro-critters: 1.1.25
+  astro-compress: 1.1.27
+  astro-critters: 1.1.26
   autoprefixer: 10.4.13_postcss@8.4.21
   daisyui: 2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44
   postcss: 8.4.21
@@ -1008,8 +1008,8 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /astro-compress/1.1.26:
-    resolution: {integrity: sha512-KsxgWBXxZ3LpGaX487pczlFtKKuW4jgi2WD/2CHmNTq+JCuuZQs8Q4aE+Z6gpKrTWDm9fQdDciM90pd0GOmqNw==}
+  /astro-compress/1.1.27:
+    resolution: {integrity: sha512-7H7mfp4/BECckQGtyNJVYBI9jwWYX3rBcbL1EbhlgyDRbs3/thtJKDwW8xEaUvxox4R2bnNyzIET4XF/zGbozg==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
@@ -1022,8 +1022,8 @@ packages:
       terser: 5.16.1
     dev: false
 
-  /astro-critters/1.1.25:
-    resolution: {integrity: sha512-jh730RIphX6PChbstzgc0N5v8qHidwYdv+WfywHILkbL1if1lBadA3s70AMSbEItAPcBnwS5fkhN+FMoLA8NGA==}
+  /astro-critters/1.1.26:
+    resolution: {integrity: sha512-WW9ab/TokFXjJQuFtc2p+6Ulq80PD5C5XBVtI/Bs8TqOJ8cX/OoPLQIqV1dxgbBdQBr78m/hFDqiyPd1CSQJlg==}
     dependencies:
       critters: 0.0.16
       files-pipeline: 0.0.2
