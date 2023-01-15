@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/react': 1.2.2
-  '@astrojs/sitemap': ^1.0.0
+  '@astrojs/sitemap': 1.0.0
   '@fontsource/red-hat-display': 4.5.11
   '@fontsource/righteous': 4.5.7
   '@iconify/json': 2.2.6
@@ -13,7 +13,7 @@ specifiers:
   astro: 1.9.2
   astro-compress: 1.1.27
   astro-critters: 1.1.26
-  astro-seo: ^0.6.1
+  astro-seo: 0.6.1
   autoprefixer: 10.4.13
   daisyui: 2.46.1
   postcss: 8.4.21
