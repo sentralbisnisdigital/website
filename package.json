@@ -25,6 +25,7 @@
     "astro": "1.9.2",
     "astro-compress": "1.1.27",
     "astro-critters": "1.1.26",
+    "astro-seo": "^0.6.1",
     "autoprefixer": "10.4.13",
     "daisyui": "2.46.1",
     "postcss": "8.4.21",

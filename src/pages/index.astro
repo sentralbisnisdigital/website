@@ -1,5 +1,6 @@
 ---
 import Layout from '~/components/layouts/layout.astro'
+import { SEO } from 'astro-seo'
 import { Hero } from '~/components/home'
 
 const title = 'Sentral Bisnis Digital'
@@ -7,7 +8,7 @@ const title = 'Sentral Bisnis Digital'
 
 <Layout>
   <Fragment slot="head">
-    <title>{title}</title>
+    <SEO title={title} />
   </Fragment>
   <Hero />
 </Layout>

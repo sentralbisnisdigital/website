@@ -13,6 +13,7 @@ specifiers:
   astro: 1.9.2
   astro-compress: 1.1.27
   astro-critters: 1.1.26
+  astro-seo: ^0.6.1
   autoprefixer: 10.4.13
   daisyui: 2.46.1
   postcss: 8.4.21
@@ -35,6 +36,7 @@ dependencies:
   astro: 1.9.2_ovmyjmuuyckt3r3gpaexj2onji
   astro-compress: 1.1.27
   astro-critters: 1.1.26
+  astro-seo: 0.6.1
   autoprefixer: 10.4.13_postcss@8.4.21
   daisyui: 2.46.1_gbtt6ss3tbiz4yjtvdr6fbrj44
   postcss: 8.4.21
@@ -1046,6 +1048,10 @@ packages:
     dependencies:
       critters: 0.0.16
       files-pipeline: 0.0.2
+    dev: false
+
+  /astro-seo/0.6.1:
+    resolution: {integrity: sha512-eszmxiycjfLcmoRyB8x5lCrWAwcSHs1i5riR1a5JbyJI8OQAl9tn1JvWFRuZvNH483CFdfNCczirnc805t/soA==}
     dev: false
 
   /astro/1.9.2_ovmyjmuuyckt3r3gpaexj2onji:
