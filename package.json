@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@astrojs/react": "1.2.2",
+    "@astrojs/sitemap": "^1.0.0",
     "@fontsource/red-hat-display": "4.5.11",
     "@fontsource/righteous": "4.5.7",
     "@iconify/json": "2.2.6",
