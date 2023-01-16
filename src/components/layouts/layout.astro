@@ -1,6 +1,6 @@
 ---
 import BaseLayout from './base.astro'
-import { Main } from '../common'
+import { Main, Header } from '../common'
 
 import '~/styles/global.scss'
 import '@fontsource/red-hat-display'
@@ -12,6 +12,7 @@ import '@fontsource/red-hat-display/800.css'
   <Fragment slot="head">
     <slot name="head" />
   </Fragment>
+  <Header />
   <Main>
     <slot />
   </Main>
