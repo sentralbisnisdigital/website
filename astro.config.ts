@@ -5,10 +5,43 @@ import svgr from 'vite-plugin-svgr'
 import compress from 'astro-compress'
 import critters from 'astro-critters'
 import sitemap from '@astrojs/sitemap'
+import AstroPWA from '@vite-pwa/astro'
 
 export default defineConfig({
   site: 'https://www.sentralbisnisdigital.co.id',
-  integrations: [react(), compress(), critters(), sitemap()],
+  integrations: [
+    react(),
+    compress(),
+    critters(),
+    sitemap(),
+    AstroPWA({
+      registerType: 'autoUpdate',
+      manifest: {
+        name: 'Sentral Bisnis Digital',
+        short_name: 'Sentral Bisnis Digital',
+        description: '',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: 'pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
+    }),
+  ],
   vite: {
     plugins: [
       svgr(),

@@ -21,3 +21,6 @@ README.md
 
 # pnpm lockfile
 pnpm-lock.yaml
+
+# vite-pwa
+dev-dist
