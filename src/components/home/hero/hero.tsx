@@ -1,5 +1,5 @@
 import type { FC } from 'react'
-import { ReactComponent as DigitalTransformIllustration } from '~/assets/svg/digital-transform.svg'
+import { Illustration } from './illustration/illustration'
 
 import style from '~/styles/modules/hero.module.scss'
 
@@ -20,7 +20,7 @@ export const Hero: FC = () => (
         <p className="text-lg md:text-2xl">{HEADLINE.text}</p>
       </article>
       <div className={style.__illustration}>
-        <DigitalTransformIllustration />
+        <Illustration />
       </div>
     </div>
   </section>
