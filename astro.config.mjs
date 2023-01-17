@@ -17,6 +17,9 @@ export default defineConfig({
     critters(),
     sitemap(),
     AstroPWA({
+      strategies: 'injectManifest',
+      srcDir: 'src/assets',
+      filename: 'sw.ts',
       registerType: 'autoUpdate',
       manifest: {
         name: 'Sentral Bisnis Digital',

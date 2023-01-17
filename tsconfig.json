@@ -1,6 +1,7 @@
 {
   "extends": "astro/tsconfigs/strictest",
   "compilerOptions": {
+    "lib": ["WebWorker"],
     "types": [
       "astro/client",
       "unplugin-icons/types/react",
@@ -8,6 +9,7 @@
       "vite-plugin-pwa/client"
     ],
     "skipLibCheck": true,
+    "exactOptionalPropertyTypes": false,
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {

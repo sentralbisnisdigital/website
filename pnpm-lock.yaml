@@ -28,7 +28,13 @@ specifiers:
   unplugin-icons: 0.15.1
   vite-plugin-pwa: ^0.14.1
   vite-plugin-svgr: 2.4.0
-  workbox-window: ^6.5.4
+  workbox-cacheable-response: ^6.5.4
+  workbox-core: ^6.5.4
+  workbox-expiration: ^6.5.4
+  workbox-precaching: ^6.5.4
+  workbox-recipes: ^6.5.4
+  workbox-routing: ^6.5.4
+  workbox-strategies: ^6.5.4
 
 dependencies:
   '@astrojs/mdx': 0.14.0_rollup@3.9.1
@@ -55,12 +61,18 @@ dependencies:
   unplugin-icons: 0.15.1_@svgr+core@6.5.1
   vite-plugin-pwa: 0.14.1_fh56thzkyakgjs6jm6gbtbzxsq
   vite-plugin-svgr: 2.4.0_rollup@3.9.1+vite@4.0.4
-  workbox-window: 6.5.4
 
 devDependencies:
   '@types/node': 18.11.18
   '@types/react': 18.0.26
   typescript: 4.9.4
+  workbox-cacheable-response: 6.5.4
+  workbox-core: 6.5.4
+  workbox-expiration: 6.5.4
+  workbox-precaching: 6.5.4
+  workbox-recipes: 6.5.4
+  workbox-routing: 6.5.4
+  workbox-strategies: 6.5.4
 
 packages:
 
@@ -4279,7 +4291,6 @@ packages:
 
   /idb/7.1.1:
     resolution: {integrity: sha512-gchesWBzyvGHRO9W8tzUWFDycow5gwjvFKfyV9FF32Y7F50yZMp7mP+T2mJIWFx49zicqyC4uefHM17o6xKIVQ==}
-    dev: false
 
   /ieee754/1.2.1:
     resolution: {integrity: sha512-dcyqhDvX1C46lXZcVqCpK+FtMRQVdIMN6/Df5js2zouUsqG7I6sFxitIC+7KYK29KdXOLHdu9zL4sFnoVQnqaA==}
@@ -7371,18 +7382,15 @@ packages:
     resolution: {integrity: sha512-DCR9uD0Fqj8oB2TSWQEm1hbFs/85hXXoayVwFKLVuIuxwJaihBsLsp4y7J9bvZbqtPJ1KlCkmYVGQKrBU4KAug==}
     dependencies:
       workbox-core: 6.5.4
-    dev: false
 
   /workbox-core/6.5.4:
     resolution: {integrity: sha512-OXYb+m9wZm8GrORlV2vBbE5EC1FKu71GGp0H4rjmxmF4/HLbMCoTFws87M3dFwgpmg0v00K++PImpNQ6J5NQ6Q==}
-    dev: false
 
   /workbox-expiration/6.5.4:
     resolution: {integrity: sha512-jUP5qPOpH1nXtjGGh1fRBa1wJL2QlIb5mGpct3NzepjGG2uFFBn4iiEBiI9GUmfAFR2ApuRhDydjcRmYXddiEQ==}
     dependencies:
       idb: 7.1.1
       workbox-core: 6.5.4
-    dev: false
 
   /workbox-google-analytics/6.5.4:
     resolution: {integrity: sha512-8AU1WuaXsD49249Wq0B2zn4a/vvFfHkpcFfqAFHNHwln3jK9QUYmzdkKXGIZl9wyKNP+RRX30vcgcyWMcZ9VAg==}
@@ -7405,7 +7413,6 @@ packages:
       workbox-core: 6.5.4
       workbox-routing: 6.5.4
       workbox-strategies: 6.5.4
-    dev: false
 
   /workbox-range-requests/6.5.4:
     resolution: {integrity: sha512-Je2qR1NXCFC8xVJ/Lux6saH6IrQGhMpDrPXWZWWS8n/RD+WZfKa6dSZwU+/QksfEadJEr/NfY+aP/CXFFK5JFg==}
@@ -7422,19 +7429,16 @@ packages:
       workbox-precaching: 6.5.4
       workbox-routing: 6.5.4
       workbox-strategies: 6.5.4
-    dev: false
 
   /workbox-routing/6.5.4:
     resolution: {integrity: sha512-apQswLsbrrOsBUWtr9Lf80F+P1sHnQdYodRo32SjiByYi36IDyL2r7BH1lJtFX8fwNHDa1QOVY74WKLLS6o5Pg==}
     dependencies:
       workbox-core: 6.5.4
-    dev: false
 
   /workbox-strategies/6.5.4:
     resolution: {integrity: sha512-DEtsxhx0LIYWkJBTQolRxG4EI0setTJkqR4m7r4YpBdxtWJH1Mbg01Cj8ZjNOO8etqfA3IZaOPHUxCs8cBsKLw==}
     dependencies:
       workbox-core: 6.5.4
-    dev: false
 
   /workbox-streams/6.5.4:
     resolution: {integrity: sha512-FXKVh87d2RFXkliAIheBojBELIPnWbQdyDvsH3t74Cwhg0fDheL1T8BqSM86hZvC0ZESLsznSYWw+Va+KVbUzg==}
