@@ -1,0 +1,33 @@
+---
+import { SEO } from 'astro-seo'
+import Layout from './layout.astro'
+
+const { frontmatter: fm } = Astro.props
+---
+
+<Layout>
+  <SEO
+    title={fm.title}
+    description={fm.message}
+    noindex={true}
+    nofollow={true}
+    slot="head"
+  />
+  <section class="__section">
+    <slot />
+    <p class="mt-4"><a class="btn btn-ghost" href="/">Kembali ke Beranda</a></p>
+  </section>
+</Layout>
+
+<style lang="scss">
+  @use '../../styles/fonts';
+
+  :global(h1, h2, h3) {
+    @extend %heading;
+  }
+
+  .__section {
+    @apply min-h-[100dvh] max-w-screen-sm mx-auto px-8;
+    @apply flex flex-col items-center justify-center;
+  }
+</style>

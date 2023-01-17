@@ -44,7 +44,7 @@ const Menu: FC = () => (
         <a href={menu.link}>{menu.title}</a>
       </li>
     ))}
-    <li className="dropdown dropdown-end">
+    <li className="md:hidden dropdown dropdown-end">
       <label tabIndex={0}>
         <MenuIcon className="md:text-2xl text-lg" />
       </label>

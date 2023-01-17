@@ -6,7 +6,9 @@ import compress from 'astro-compress'
 import critters from 'astro-critters'
 import sitemap from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
+import mdx from '@astrojs/mdx'
 
+// https://astro.build/config
 export default defineConfig({
   site: 'https://www.sentralbisnisdigital.co.id',
   integrations: [
@@ -41,6 +43,7 @@ export default defineConfig({
         ],
       },
     }),
+    mdx(),
   ],
   vite: {
     plugins: [
