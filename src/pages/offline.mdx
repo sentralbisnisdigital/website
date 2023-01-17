@@ -1,0 +1,17 @@
+---
+layout: '~/layouts/error.astro'
+title: Offline
+message: Anda sedang offline. Silahkan cek kuota internet Anda.
+---
+
+import { ReactComponent as Illustration } from '~/assets/svg/404-animation.svg'
+import '~/styles/partials/404-animation.scss'
+
+<div className="text-[#26B9E5] w-full 2xl:max-w-2xl max-w-sm mx-auto">
+  <Illustration />
+</div>
+
+<h1 className="font-extrabold 2xl:text-6xl text-4xl mb-2">
+  {frontmatter.title}
+</h1>
+<p>{frontmatter.message}</p>

@@ -35,6 +35,7 @@ specifiers:
   workbox-recipes: ^6.5.4
   workbox-routing: ^6.5.4
   workbox-strategies: ^6.5.4
+  workbox-window: ^6.5.4
 
 dependencies:
   '@astrojs/mdx': 0.14.0_rollup@3.9.1
@@ -73,6 +74,7 @@ devDependencies:
   workbox-recipes: 6.5.4
   workbox-routing: 6.5.4
   workbox-strategies: 6.5.4
+  workbox-window: 6.5.4
 
 packages:
 
@@ -2419,7 +2421,6 @@ packages:
 
   /@types/trusted-types/2.0.2:
     resolution: {integrity: sha512-F5DIZ36YVLE+PN+Zwws4kJogq47hNgX3Nx6WyDJ3kcplxyke3XIzB8uK5n/Lpm1HBsbGzd6nmGehL8cPekP+Tg==}
-    dev: false
 
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
@@ -7456,7 +7457,6 @@ packages:
     dependencies:
       '@types/trusted-types': 2.0.2
       workbox-core: 6.5.4
-    dev: false
 
   /wrap-ansi/8.0.1:
     resolution: {integrity: sha512-QFF+ufAqhoYHvoHdajT/Po7KoXVBPXS2bgjIam5isfWJPfIOnQZ50JtUiVvCv/sjgacf3yRrt2ZKUZ/V4itN4g==}
