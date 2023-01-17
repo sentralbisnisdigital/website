@@ -22,7 +22,9 @@ clientsClaim()
 pageCache()
 staticResourceCache()
 imageCache()
-offlineFallback()
+offlineFallback({
+  pageFallback: 'offline/index.html',
+})
 
 registerRoute(
   ({ request }) => request.destination === 'font',
