@@ -1,7 +1,9 @@
 import type { FC } from 'react'
-import { Illustration } from './illustration/illustration'
+
+import { ReactComponent as DigitalTransformIllustration } from '~/assets/svg/digital-transform-animated.svg'
 
 import style from '~/styles/modules/hero.module.scss'
+import '~/styles/partials/hero-illustration.scss'
 
 const HEADLINE = {
   title: 'Semangat Transformasi Digital.',
@@ -20,7 +22,7 @@ export const Hero: FC = () => (
         <p className="text-lg md:text-2xl">{HEADLINE.text}</p>
       </article>
       <div className={style.__illustration}>
-        <Illustration />
+        <DigitalTransformIllustration />
       </div>
     </div>
   </section>

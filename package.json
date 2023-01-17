@@ -20,6 +20,7 @@
     "@fontsource/red-hat-display": "4.5.11",
     "@fontsource/righteous": "4.5.7",
     "@iconify/json": "2.2.7",
+    "@radix-ui/react-navigation-menu": "^1.1.1",
     "@svgr/core": "6.5.1",
     "@tailwindcss/typography": "0.5.9",
     "@vite-pwa/astro": "^0.0.1",
