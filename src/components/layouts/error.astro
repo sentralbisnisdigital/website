@@ -2,12 +2,13 @@
 import { SEO } from 'astro-seo'
 import Layout from './layout.astro'
 
+import site from '~/site.yml'
 const { frontmatter: fm } = Astro.props
 ---
 
 <Layout>
   <SEO
-    title={fm.title}
+    title={`${fm.title} \u2014 ${site.title}`}
     description={fm.message}
     noindex={true}
     nofollow={true}

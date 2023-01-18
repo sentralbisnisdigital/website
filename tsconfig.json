@@ -6,7 +6,8 @@
       "astro/client",
       "unplugin-icons/types/react",
       "vite-plugin-svgr/client",
-      "vite-plugin-pwa/client"
+      "vite-plugin-pwa/client",
+      "@modyfi/vite-plugin-yaml/modules"
     ],
     "skipLibCheck": true,
     "exactOptionalPropertyTypes": false,

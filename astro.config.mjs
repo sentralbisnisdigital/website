@@ -1,18 +1,24 @@
 import { defineConfig } from 'astro/config'
+
+// Astro integrations
 import react from '@astrojs/react'
-import Icons from 'unplugin-icons/vite'
-import svgr from 'vite-plugin-svgr'
-import compress from 'astro-compress'
-import critters from 'astro-critters'
 import sitemap from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
 import mdx from '@astrojs/mdx'
+import compress from 'astro-compress'
+import critters from 'astro-critters'
+
+// Vite plugins
+import Icons from 'unplugin-icons/vite'
+import svgr from 'vite-plugin-svgr'
+import yaml from '@modyfi/vite-plugin-yaml'
 
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.sentralbisnisdigital.co.id',
   integrations: [
     react(),
+    mdx(),
     compress(),
     critters(),
     sitemap(),
@@ -46,10 +52,10 @@ export default defineConfig({
         ],
       },
     }),
-    mdx(),
   ],
   vite: {
     plugins: [
+      yaml(),
       svgr(),
       Icons({
         compiler: 'jsx',
