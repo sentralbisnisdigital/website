@@ -20,3 +20,11 @@ import '@fontsource/red-hat-display/800.css'
     import '~/assets/pwa'
   </script>
 </BaseLayout>
+
+<style lang="scss">
+  @use '../../styles/fonts';
+
+  :global(h1, h2, h3) {
+    @extend %heading;
+  }
+</style>

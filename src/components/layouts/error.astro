@@ -1,9 +1,14 @@
 ---
-import { SEO } from 'astro-seo'
+import type { MDXLayoutProps } from 'astro'
+
 import Layout from './layout.astro'
+import { SEO } from 'astro-seo'
 
 import site from '~/site.yml'
-const { frontmatter: fm } = Astro.props
+const { frontmatter: fm } = Astro.props as MDXLayoutProps<{
+  title: string
+  message: string
+}>
 ---
 
 <Layout>
@@ -21,12 +26,6 @@ const { frontmatter: fm } = Astro.props
 </Layout>
 
 <style lang="scss">
-  @use '../../styles/fonts';
-
-  :global(h1, h2, h3) {
-    @extend %heading;
-  }
-
   .__section {
     @apply min-h-[100dvh] max-w-screen-sm mx-auto px-8;
     @apply flex flex-col items-center justify-center;
