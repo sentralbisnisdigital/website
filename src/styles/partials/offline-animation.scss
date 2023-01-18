@@ -1,0 +1,56 @@
+svg#freepik_stories-no-connection:not(.animated) .animable {
+  opacity: 0;
+}
+svg#freepik_stories-no-connection.animated #freepik--Device--inject-31 {
+  animation: 0.5s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) zoomIn,
+    1.5s Infinite linear wind;
+  animation-delay: 0.2s, 0.7s;
+  opacity: 0;
+}
+svg#freepik_stories-no-connection.animated #freepik--Sun--inject-31 {
+  animation: 1s 1 forwards cubic-bezier(0.36, -0.01, 0.5, 1.38) fadeIn,
+    1.5s Infinite linear floating;
+  animation-delay: 0s, 1s;
+}
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes wind {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
