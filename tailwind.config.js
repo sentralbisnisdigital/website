@@ -9,15 +9,15 @@ module.exports = {
     themes: [
       {
         sngrstudio: {
-          primary: '#417AFF',
-          secondary: '#B72FFF',
+          primary: '#26B9E5',
+          secondary: '#ADE8F6',
           accent: '#FF00FF',
-          neutral: '#0A0612',
-          'base-100': '#F5F6F3',
-          info: '#0a0512',
-          success: '#489e7e',
-          warning: '#c68e46',
-          error: '#f44336',
+          neutral: '#000000',
+          'base-100': '#ffffff',
+          info: '#24bac8',
+          success: '#15d671',
+          warning: '#f6d60f',
+          error: '#fe343c',
         },
       },
     ],

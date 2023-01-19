@@ -5,7 +5,7 @@ import MenuIcon from '~icons/mdi/menu'
 
 const MENU_ITEMS = [
   {
-    link: '/#layanan',
+    link: '/layanan',
     title: 'Layanan',
   },
   {
