@@ -36,7 +36,7 @@
     "tailwindcss": "3.2.4"
   },
   "devDependencies": {
-    "@iconify/json": "2.2.9",
+    "@iconify/json": "2.2.10",
     "@modyfi/vite-plugin-yaml": "1.0.4",
     "@svgr/core": "6.5.1",
     "@types/node": "18.11.18",

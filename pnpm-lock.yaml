@@ -6,7 +6,7 @@ specifiers:
   '@astrojs/sitemap': 1.0.0
   '@fontsource/red-hat-display': 4.5.12
   '@fontsource/righteous': 4.5.7
-  '@iconify/json': 2.2.9
+  '@iconify/json': 2.2.10
   '@modyfi/vite-plugin-yaml': 1.0.4
   '@svgr/core': 6.5.1
   '@tailwindcss/typography': 0.5.9
@@ -60,7 +60,7 @@ dependencies:
   tailwindcss: 3.2.4_postcss@8.4.21
 
 devDependencies:
-  '@iconify/json': 2.2.9
+  '@iconify/json': 2.2.10
   '@modyfi/vite-plugin-yaml': 1.0.4_rollup@3.10.0+vite@4.0.4
   '@svgr/core': 6.5.1
   '@types/node': 18.11.18
@@ -1641,8 +1641,8 @@ packages:
     resolution: {integrity: sha512-tIDEC1ygwIGiNPToM1XRRU6YqUdQ8S7NzrYNW1gcE1cN9vU7x7zcgNRy8jALjolgdAWJxM78LnEKDUa7mnOPlw==}
     dev: false
 
-  /@iconify/json/2.2.9:
-    resolution: {integrity: sha512-R6a+izCJRPVAv/KR6QARNQwiKh4BiGYaIQUqLwmbI7m9gC1I5JoniT7F63jlic9CfRnUXlgxNEe6lpfh/wAA3Q==}
+  /@iconify/json/2.2.10:
+    resolution: {integrity: sha512-WaAHE6+o2YssA768FRx0a6FdJnW4jYMrVw6eXA8iwucoM+abaGMwxaGderlGS/kovFXCHyV1vViJgW12BPErcg==}
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.0.0
