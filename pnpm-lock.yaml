@@ -1,18 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@astrojs/mdx': ^0.14.0
+  '@astrojs/mdx': 0.14.0
   '@astrojs/react': 1.2.2
   '@astrojs/sitemap': 1.0.0
   '@fontsource/red-hat-display': 4.5.11
   '@fontsource/righteous': 4.5.7
   '@iconify/json': 2.2.7
-  '@modyfi/vite-plugin-yaml': ^1.0.4
+  '@modyfi/vite-plugin-yaml': 1.0.4
   '@svgr/core': 6.5.1
   '@tailwindcss/typography': 0.5.9
   '@types/node': 18.11.18
   '@types/react': 18.0.26
-  '@vite-pwa/astro': ^0.0.1
+  '@vite-pwa/astro': 0.0.1
   astro: 1.9.2
   astro-compress: 1.1.27
   astro-critters: 1.1.26
@@ -27,16 +27,16 @@ specifiers:
   tailwindcss: 3.2.4
   typescript: 4.9.4
   unplugin-icons: 0.15.1
-  vite-plugin-pwa: ^0.14.1
+  vite-plugin-pwa: 0.14.1
   vite-plugin-svgr: 2.4.0
-  workbox-cacheable-response: ^6.5.4
-  workbox-core: ^6.5.4
-  workbox-expiration: ^6.5.4
-  workbox-precaching: ^6.5.4
-  workbox-recipes: ^6.5.4
-  workbox-routing: ^6.5.4
-  workbox-strategies: ^6.5.4
-  workbox-window: ^6.5.4
+  workbox-cacheable-response: 6.5.4
+  workbox-core: 6.5.4
+  workbox-expiration: 6.5.4
+  workbox-precaching: 6.5.4
+  workbox-recipes: 6.5.4
+  workbox-routing: 6.5.4
+  workbox-strategies: 6.5.4
+  workbox-window: 6.5.4
 
 dependencies:
   '@astrojs/mdx': 0.14.0_rollup@3.10.0
