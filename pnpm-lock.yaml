@@ -2,7 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/mdx': 0.15.1
-  '@astrojs/react': 1.2.2
+  '@astrojs/react': 2.0.1
   '@astrojs/sitemap': 1.0.0
   '@fontsource/red-hat-display': 4.5.12
   '@fontsource/righteous': 4.5.7
@@ -40,7 +40,7 @@ specifiers:
 
 dependencies:
   '@astrojs/mdx': 0.15.1_astro@1.9.2+rollup@3.10.0
-  '@astrojs/react': 1.2.2_fxtgt6bjwd6p4cwoordejim2zi
+  '@astrojs/react': 2.0.1_fxtgt6bjwd6p4cwoordejim2zi
   '@astrojs/sitemap': 1.0.0
   '@fontsource/red-hat-display': 4.5.12
   '@fontsource/righteous': 4.5.7
@@ -241,9 +241,9 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/react/1.2.2_fxtgt6bjwd6p4cwoordejim2zi:
-    resolution: {integrity: sha512-ab9fYvzkC74J7N+M3DWQuZgwu7sYjW0aLO3sEAdCX/jZZz+0BhrqS8m9QjtGJyQK/niF4tgJjpPfadopxKc56g==}
-    engines: {node: ^14.18.0 || >=16.12.0}
+  /@astrojs/react/2.0.1_fxtgt6bjwd6p4cwoordejim2zi:
+    resolution: {integrity: sha512-EhpYg6afa3ks0ofc1mBcdbQvcQMt3mn5/O2K98lvg9LbTaYRfSvwnzfgVlc0boSaQYFrzssoeOtCUhNVUb1krg==}
+    engines: {node: '>=16.12.0'}
     peerDependencies:
       '@types/react': ^17.0.50 || ^18.0.21
       '@types/react-dom': ^17.0.17 || ^18.0.6
