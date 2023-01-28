@@ -3,7 +3,6 @@
   "compilerOptions": {
     "lib": ["WebWorker"],
     "types": [
-      "astro/client",
       "unplugin-icons/types/react",
       "vite-plugin-svgr/client",
       "vite-plugin-pwa/client",
