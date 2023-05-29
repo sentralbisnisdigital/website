@@ -4,15 +4,15 @@
   "private": true,
   "scripts": {
     "astro": "astro",
-    "prebuild": "pnpx npm-run-all -s check:*",
+    "check": "pnpm dlx npm-run-all -s check:*",
     "build": "astro build",
     "check:astro": "astro check && tsc --noEmit",
-    "check:style": "pnpx prettier --plugin-search-dir=. --check .",
+    "check:style": "pnpm exec prettier --plugin-search-dir=. --check .",
     "dev": "astro dev",
-    "format": "pnpx prettier --plugin-search-dir=. --write .",
+    "format": "pnpm exec prettier --plugin-search-dir=. --write .",
     "preinstall": "npx only-allow pnpm",
     "preview": "astro preview",
-    "start": "pnpx npm-run-all -s build preview"
+    "start": "pnpm dlx npm-run-all -s build preview"
   },
   "dependencies": {
     "@astrojs/mdx": "0.15.1",
