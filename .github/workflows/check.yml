@@ -1,11 +1,9 @@
-name: Check my Astro site
+name: Check my Astro site on pull request
 
 on:
   # Trigger the workflow every time you created a pull request against the `main` branch
   # Using a different branch name? Replace `main` with your branch’s name
   pull_request:
-    branches: [ main ]
-  push:
     branches: [ main ]
   
 # Allow this job to clone the repo and create a deployment
@@ -13,7 +11,7 @@ permissions:
   contents: read
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
