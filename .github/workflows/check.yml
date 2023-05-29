@@ -5,6 +5,8 @@ on:
   # Using a different branch name? Replace `main` with your branch’s name
   pull_request:
     branches: [ main ]
+  push:
+    branches: [ main ]
   
 # Allow this job to clone the repo and create a deployment
 permissions:
