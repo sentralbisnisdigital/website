@@ -18,8 +18,8 @@ dependencies:
     specifier: 4.5.12
     version: 4.5.12
   '@fontsource/righteous':
-    specifier: 4.5.7
-    version: 4.5.7
+    specifier: 5.0.3
+    version: 5.0.3
   '@tailwindcss/typography':
     specifier: 0.5.9
     version: 0.5.9(tailwindcss@3.3.2)
@@ -1605,8 +1605,8 @@ packages:
     resolution: {integrity: sha512-unwt2GIVdLBBMlCvTomEC1uPLd25TCPEEolEcOz/NdnWAbKVVAyxP/9JVNclcJx2vVl1UEkGGHi/Yxf8blbsOg==}
     dev: false
 
-  /@fontsource/righteous@4.5.7:
-    resolution: {integrity: sha512-tIDEC1ygwIGiNPToM1XRRU6YqUdQ8S7NzrYNW1gcE1cN9vU7x7zcgNRy8jALjolgdAWJxM78LnEKDUa7mnOPlw==}
+  /@fontsource/righteous@5.0.3:
+    resolution: {integrity: sha512-3ZOOVl20jSATUbkm3syDoCu9zIeRmzl9L9OqrHHIhossThYbeTZV6JZfvWa12O5e/6EXUlLk+9yHN/cZlkqCJg==}
     dev: false
 
   /@iconify/json@2.2.72:
