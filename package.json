@@ -23,6 +23,7 @@
     "@tailwindcss/typography": "0.5.9",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
+    "@types/react-dom": "^18.0.6",
     "@vite-pwa/astro": "0.1.1",
     "astro": "2.7.2",
     "astro-seo": "0.7.4",
@@ -45,6 +46,5 @@
     "workbox-routing": "7.0.0",
     "workbox-strategies": "7.0.0",
     "workbox-window": "7.0.0"
-  },
-  "devDependencies": {}
+  }
 }

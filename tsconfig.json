@@ -5,12 +5,12 @@
     "types": [
       "unplugin-icons/types/react",
       "vite-plugin-svgr/client",
-      "vite-plugin-pwa/client",
-      "@modyfi/vite-plugin-yaml/modules"
+      "vite-plugin-pwa/client"
     ],
     "skipLibCheck": true,
     "exactOptionalPropertyTypes": false,
-    "jsx": "preserve",
+    "jsx": "react-jsx",
+    "jsxImportSource": "react",
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
