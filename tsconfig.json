@@ -13,7 +13,6 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "~/layouts/*": ["./src/components/layouts/*"],
       "~/*": ["./src/*"]
     }
   }

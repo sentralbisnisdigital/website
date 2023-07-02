@@ -1,0 +1,21 @@
+---
+import BaseLayout from './base.astro'
+
+import '~/styles/global.scss'
+---
+
+<BaseLayout>
+  <!-- Head -->
+  <Fragment slot="head">
+    <slot name="head" />
+  </Fragment>
+
+  <!-- Body -->
+  <Fragment>
+    <header></header>
+    <main>
+      <slot />
+    </main>
+    <footer></footer>
+  </Fragment>
+</BaseLayout>
