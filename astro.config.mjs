@@ -5,13 +5,13 @@ import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
 import mdx from '@astrojs/mdx'
-import compress from 'astro-compress'
-import critters from 'astro-critters'
 
 // Vite plugins
 import Icons from 'unplugin-icons/vite'
 import svgr from 'vite-plugin-svgr'
 import yaml from '@modyfi/vite-plugin-yaml'
+
+import manifest from './src/includes/manifest.json' assert { type: 'json' }
 
 // https://astro.build/config
 export default defineConfig({
@@ -19,38 +19,13 @@ export default defineConfig({
   integrations: [
     react(),
     mdx(),
-    compress(),
-    critters(),
     sitemap(),
     AstroPWA({
       strategies: 'injectManifest',
       srcDir: 'src/assets',
       filename: 'sw.ts',
       registerType: 'autoUpdate',
-      manifest: {
-        name: 'Sentral Bisnis Digital',
-        short_name: 'Sentral Bisnis Digital',
-        description: '',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: 'pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable',
-          },
-        ],
-      },
+      manifest
     }),
   ],
   vite: {
