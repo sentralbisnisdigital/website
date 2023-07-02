@@ -23,3 +23,4 @@ pnpm-debug.log*
 
 # vite-pwa
 dev-dist
+.vercel
