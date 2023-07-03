@@ -1,5 +1,6 @@
 ---
 import BaseLayout from './base.astro'
+import Header from '~/components/header'
 
 import '~/styles/global.scss'
 ---
@@ -12,8 +13,8 @@ import '~/styles/global.scss'
 
   <!-- Body -->
   <Fragment>
-    <header></header>
-    <main>
+    <Header />
+    <main class="flex-1 px-4">
       <slot />
     </main>
     <footer></footer>

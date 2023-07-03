@@ -9,4 +9,15 @@ export const collections = {
       description: z.string().optional(),
     }),
   }),
+  menu: defineCollection({
+    type: 'data',
+    schema: z.object({
+      items: z.array(
+        z.object({
+          title: z.string(),
+          href: z.string(),
+        })
+      ),
+    }),
+  }),
 }
