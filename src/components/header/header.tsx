@@ -1,10 +1,8 @@
 import type { FC } from 'react'
+import type { CollectionEntry } from 'astro:content'
 import * as Nav from '@radix-ui/react-navigation-menu'
-import { type CollectionEntry, getEntry } from 'astro:content'
 
-const menuItems = await getEntry('menu', 'menu')
-
-const HeaderComp: FC = () => (
+const HeaderComp: FC<{ menu: CollectionEntry<'menu'> }> = ({ menu }) => (
   <div className="flex flex-row items-center justify-between w-full">
     <a href="/">
       <img
@@ -15,7 +13,7 @@ const HeaderComp: FC = () => (
         alt="logo"
       />
     </a>
-    <HeaderMenu menu={menuItems} />
+    <HeaderMenu menu={menu} />
   </div>
 )
 

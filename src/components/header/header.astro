@@ -1,7 +1,10 @@
 ---
 import HeaderComp from './header'
+import { getEntry } from 'astro:content'
+
+const menu = await getEntry('menu', 'menu')
 ---
 
 <header class="px-4 py-8">
-  <HeaderComp client:idle />
+  <HeaderComp menu={menu} client:idle />
 </header>

@@ -12,6 +12,7 @@ const HeroComp: FC<
         height={image.options.height}
         alt={title}
       />
+      {/** <a href="https://storyset.com/online">Online illustrations by Storyset</a> */}
     </div>
     <div>
       <h1>{title}</h1>
