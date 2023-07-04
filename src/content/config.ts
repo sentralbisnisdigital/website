@@ -20,12 +20,13 @@ export const collections = {
       ),
     }),
   }),
-  
+
   hero: defineCollection({
     type: 'content',
-    schema: ({ image }) => z.object({
-      title: z.string(),
-      image: image()
-    })
-  })
+    schema: ({ image }) =>
+      z.object({
+        title: z.string(),
+        image: image(),
+      }),
+  }),
 }
