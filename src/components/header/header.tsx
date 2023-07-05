@@ -1,16 +1,22 @@
 import type { FC } from 'react'
 import type { CollectionEntry } from 'astro:content'
+import type { GetImageResult } from 'astro'
 import * as Nav from '@radix-ui/react-navigation-menu'
 
-const HeaderComp: FC<{ menu: CollectionEntry<'menu'> }> = ({ menu }) => (
+const HeaderComp: FC<{
+  menu: CollectionEntry<'menu'>
+  logo: GetImageResult
+}> = ({ menu, logo }) => (
   <div className="flex flex-row items-center justify-between w-full">
     <a href="/">
       <img
-        src="https://placekitten.com/75/75"
-        className="w-[35px] h-[35px] object-contain"
-        width={75}
-        height={75}
+        src={logo.src}
+        className="w-auto h-[35px] object-contain"
+        width={logo.options.width}
+        height={logo.options.height}
         alt="logo"
+        loading="eager"
+        decoding="async"
       />
     </a>
     <HeaderMenu menu={menu} />

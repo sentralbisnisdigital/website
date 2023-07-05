@@ -46,6 +46,7 @@ export default defineConfig({
   image: {
     service: sharpImageService(),
   },
+  compressHTML: true,
   output: 'hybrid',
   adapter: vercel(),
 })

@@ -8,13 +8,21 @@ const { Content } = await heroContent.render()
 
 const image = await getImage({
   src: heroContent.data.image,
-  width: 300,
-  height: 300,
+  width: 768,
+  height: 768,
 })
 ---
 
-<section>
+<section class="__hero">
   <HeroComp title={heroContent.data.title} image={image}>
     <Content />
   </HeroComp>
 </section>
+
+<style lang="scss">
+  .__hero {
+    :global(p) {
+      @apply text-lg md:text-xl xl:text-2xl;
+    }
+  }
+</style>
