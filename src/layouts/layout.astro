@@ -3,7 +3,7 @@ import BaseLayout from './base.astro'
 import Header from '~/components/header'
 import { getEntry } from 'astro:content'
 import { getImage } from 'astro:assets'
-import { SEO, type Link } from 'astro-seo'
+import { SEO } from 'astro-seo'
 
 import '@fontsource-variable/red-hat-display'
 import '@fontsource-variable/inter'
@@ -13,13 +13,12 @@ export interface Props {
   title?: string
   description?: string
   isPrivate?: boolean
-  metaLinks?: Partial<Link>[]
 }
 
 const site = await getEntry('site', 'site')
 const logo = await getImage({ src: site.data.logo, width: 350, height: 70 })
 
-const { title, description, isPrivate, metaLinks } = Astro.props
+const { title, description, isPrivate } = Astro.props
 ---
 
 <BaseLayout>
@@ -32,12 +31,8 @@ const { title, description, isPrivate, metaLinks } = Astro.props
       description={description || site.data.description}
       noindex={isPrivate}
       nofollow={isPrivate}
-      extend={{
-        link: metaLinks?.concat([
-          { rel: 'preload', as: 'image', href: logo.src },
-        ]),
-      }}
     />
+    <link rel="preload" as="image" href={logo.src}>
     <slot name="head" />
   </Fragment>
 
