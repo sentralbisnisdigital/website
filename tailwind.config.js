@@ -10,14 +10,10 @@ module.exports = {
       {
         sbdigital: {
           primary: '#26B9E5',
-          secondary: '#ADE8F6',
-          accent: '#FF00FF',
-          neutral: '#000000',
-          'base-100': '#ffffff',
-          info: '#24bac8',
-          success: '#15d671',
-          warning: '#f6d60f',
-          error: '#fe343c',
+          secondary: '#004D74',
+          accent: '#8e408a',
+          neutral: '#344A53',
+          'base-100': '#FDFDFD',
         },
       },
     ],

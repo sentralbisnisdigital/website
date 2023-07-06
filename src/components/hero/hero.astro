@@ -2,12 +2,13 @@
 import HeroComp from './hero'
 import { getEntry } from 'astro:content'
 
+const site = await getEntry('site', 'site')
 const heroContent = await getEntry('hero', 'hero')
 const { Content } = await heroContent.render()
 ---
 
 <section class="__hero">
-  <HeroComp title={heroContent.data.title}>
+  <HeroComp title={heroContent.data.title} subtitle={site.data.title}>
     <Content />
   </HeroComp>
 </section>
@@ -15,7 +16,7 @@ const { Content } = await heroContent.render()
 <style lang="scss">
   .__hero {
     :global(p) {
-      @apply md:text-2xl 2xl:text-4xl;
+      @apply md:text-2xl;
       @apply leading-relaxed #{!important};
     }
   }

@@ -29,4 +29,15 @@ export const collections = {
       title: z.string(),
     }),
   }),
+
+  expertise: defineCollection({
+    type: 'content',
+    schema: ({ image }) =>
+      z.object({
+        title: z.string(),
+        order: z.number().optional().default(0),
+        image: image().optional(),
+        isWide: z.boolean().optional().default(false),
+      }),
+  }),
 }
