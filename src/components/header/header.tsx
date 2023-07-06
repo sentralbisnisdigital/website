@@ -2,24 +2,29 @@ import type { FC } from 'react'
 import type { CollectionEntry } from 'astro:content'
 import type { GetImageResult } from 'astro'
 import * as Nav from '@radix-ui/react-navigation-menu'
+import MenuIcon from '~icons/material-symbols/menu'
 
 const HeaderComp: FC<{
   menu: CollectionEntry<'menu'>
   logo: GetImageResult
 }> = ({ menu, logo }) => (
-  <div className="flex flex-row items-center justify-between w-full">
-    <a href="/">
-      <img
-        src={logo.src}
-        className="w-auto h-[35px] object-contain"
-        width={logo.options.width}
-        height={logo.options.height}
-        alt="logo"
-        loading="eager"
-        decoding="async"
-      />
-    </a>
-    <HeaderMenu menu={menu} />
+  <div className="navbar bg-base-100">
+    <div className="flex-1">
+      <a className='btn btn-ghost -ml-6' href="/">
+        <img
+          src={logo.src}
+          className="w-auto h-[35px] object-contain"
+          width={logo.options.width}
+          height={logo.options.height}
+          alt="logo"
+          loading="eager"
+          decoding="async"
+        />
+      </a>
+    </div>
+    <div className="flex-none">
+      <HeaderMenu menu={menu} />
+    </div>
   </div>
 )
 
@@ -27,12 +32,17 @@ export default HeaderComp
 
 const HeaderMenu: FC<{ menu: CollectionEntry<'menu'> }> = ({ menu }) => (
   <Nav.Root>
-    <Nav.List className="flex flex-row items-center gap-4">
+    <Nav.List className="menu menu-horizontal">
       {menu.data.items.map((item, i) => (
-        <Nav.Item key={i}>
+        <Nav.Item className='hidden md:flex' key={i}>
           <Nav.Link href={item.href}>{item.title}</Nav.Link>
         </Nav.Item>
       ))}
+      <Nav.Item className='md:hidden'>
+        <Nav.Trigger className='-mr-6'>
+          <MenuIcon />
+        </Nav.Trigger>
+      </Nav.Item>
     </Nav.List>
   </Nav.Root>
 )

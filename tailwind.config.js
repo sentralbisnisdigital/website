@@ -8,7 +8,7 @@ module.exports = {
   daisyui: {
     themes: [
       {
-        sngrstudio: {
+        sbdigital: {
           primary: '#26B9E5',
           secondary: '#ADE8F6',
           accent: '#FF00FF',
