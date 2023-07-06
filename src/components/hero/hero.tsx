@@ -1,10 +1,10 @@
 import type { FC, PropsWithChildren } from 'react'
-import type { GetImageResult } from 'astro'
 import style from './hero.module.scss'
 
-const HeroComp: FC<
-  PropsWithChildren<{ title: string; image: GetImageResult }>
-> = ({ title, image, children }) => (
+const HeroComp: FC<PropsWithChildren<{ title: string }>> = ({
+  title,
+  children,
+}) => (
   <article className="flex flex-col gap-4 lg:gap-6 xl:gap-8 max-w-screen-md 2xl:max-w-screen-lg mx-auto py-8 md:py-16 2xl:py-24">
     <h1
       className={`${style.__title} text-4xl lg:text-6xl 2xl:text-8xl !leading-tight font-black`}

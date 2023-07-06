@@ -1,20 +1,13 @@
 ---
 import HeroComp from './hero'
 import { getEntry } from 'astro:content'
-import { getImage } from 'astro:assets'
 
 const heroContent = await getEntry('hero', 'hero')
 const { Content } = await heroContent.render()
-
-const image = await getImage({
-  src: heroContent.data.image,
-  width: 768,
-  height: 768,
-})
 ---
 
 <section class="__hero">
-  <HeroComp title={heroContent.data.title} image={image}>
+  <HeroComp title={heroContent.data.title}>
     <Content />
   </HeroComp>
 </section>
