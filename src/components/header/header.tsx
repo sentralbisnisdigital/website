@@ -10,7 +10,7 @@ const HeaderComp: FC<{
 }> = ({ menu, logo }) => (
   <div className="navbar bg-base-100">
     <div className="flex-1">
-      <a className='btn btn-ghost -ml-6' href="/">
+      <a className="btn btn-ghost -ml-6" href="/">
         <img
           src={logo.src}
           className="w-auto h-[35px] object-contain"
@@ -34,14 +34,23 @@ const HeaderMenu: FC<{ menu: CollectionEntry<'menu'> }> = ({ menu }) => (
   <Nav.Root>
     <Nav.List className="menu menu-horizontal">
       {menu.data.items.map((item, i) => (
-        <Nav.Item className='hidden md:flex' key={i}>
+        <Nav.Item className="hidden md:flex" key={i}>
           <Nav.Link href={item.href}>{item.title}</Nav.Link>
         </Nav.Item>
       ))}
-      <Nav.Item className='md:hidden'>
-        <Nav.Trigger className='-mr-6'>
+      <Nav.Item className="md:hidden dropdown dropdown-end">
+        <Nav.Trigger className="-mr-6">
           <MenuIcon />
         </Nav.Trigger>
+        <Nav.Content className="dropdown-content menu bg-base-100 mt-3">
+          <ul className="w-full h-full">
+            {menu.data.items.map((item, i) => (
+              <li key={i}>
+                <Nav.Link href={item.title}>{item.title}</Nav.Link>
+              </li>
+            ))}
+          </ul>
+        </Nav.Content>
       </Nav.Item>
     </Nav.List>
   </Nav.Root>
