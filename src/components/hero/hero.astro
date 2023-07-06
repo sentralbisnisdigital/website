@@ -22,7 +22,8 @@ const image = await getImage({
 <style lang="scss">
   .__hero {
     :global(p) {
-      @apply text-lg md:text-xl xl:text-2xl;
+      @apply md:text-2xl 2xl:text-4xl;
+      @apply leading-relaxed #{!important};
     }
   }
 </style>
