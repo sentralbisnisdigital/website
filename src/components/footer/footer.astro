@@ -10,8 +10,16 @@ const FooterLogoProps = await getImage({
   width: 350,
   height: 70,
 })
+
+const menuUtama = await getEntry('menu', 'menu')
+const menuPortofolio = await getEntry('menu', 'portofolio')
+const menuLink = await getEntry('menu', 'link')
 ---
 
-<footer class="bg-neutral text-neutral-content">
-  <FooterComp logo={FooterLogoProps} site={site} />
+<footer class="footer bg-neutral text-neutral-content px-8 py-16">
+  <FooterComp
+    logo={FooterLogoProps}
+    site={site}
+    menus={[menuUtama, menuPortofolio, menuLink]}
+  />
 </footer>

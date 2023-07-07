@@ -22,6 +22,7 @@ export const collections = {
   menu: defineCollection({
     type: 'data',
     schema: z.object({
+      title: z.string(),
       items: z.array(
         z.object({
           title: z.string(),
