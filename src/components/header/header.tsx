@@ -46,7 +46,7 @@ const HeaderMenu: FC<{ menu: CollectionEntry<'menu'> }> = ({ menu }) => (
           <ul className="w-full h-full">
             {menu.data.items.map((item, i) => (
               <li key={i}>
-                <Nav.Link href={item.title}>{item.title}</Nav.Link>
+                <Nav.Link href={item.href}>{item.title}</Nav.Link>
               </li>
             ))}
           </ul>

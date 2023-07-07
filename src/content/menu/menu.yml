@@ -1,7 +1,7 @@
 title: Utama
 items:
   - title: Tentang
-    href: '#'
+    href: '/tentang'
   - title: Portofolio
     href: '#'
   - title: Kontak

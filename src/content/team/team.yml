@@ -1,0 +1,19 @@
+members:
+  - name: Muhammad Syiblunnur
+    pos: Director
+    image: '~/assets/team/syiblun.jpg'
+  - name: Andriadi
+    pos: Hardware & Networking
+    image: '~/assets/team/andriadi.jpg'
+  - name: Fery Irawan
+    pos: PHP Developer
+    image: '~/assets/team/fery.jpg'
+  - name: R. Ilham Sastra A. P
+    pos: Frontend Developer
+    image: '~/assets/team/ilham.jpg'
+  - name: Muhammad Nuryahya
+    pos: PHP/WordPress Developer
+    image: '~/assets/team/yahya.jpg'
+  - name: Zaka M. Noor
+    pos: PHP Developer
+    image: '~/assets/team/zaka.jpg'

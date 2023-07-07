@@ -3,21 +3,31 @@ import Layout from './layout.astro'
 
 export interface Props {
   title: string
+  subtitle?: string
   description?: string
 }
 
-const { title, description } = Astro.props
+const { title, subtitle, description } = Astro.props
 ---
 
 <Layout title={title} description={description}>
   <article
-    class="prose 2xl:peose-lg max-w-screen-md mx-auto py-8 md:py-16 2xl:py-24"
+    class="prose prose-lg xl:prose-xl max-w-screen-md mx-auto py-8 md:py-16 2xl:py-24"
   >
-    <h1
-      class="__title text-4xl lg:text-6xl !leading-tight font-black bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary my-16 md:my-24"
-    >
-      {title}
-    </h1>
+    <header class="my-16 md:my-24">
+      {
+        subtitle && (
+          <span class="text-base lg:text-lg font-bold uppercase text-neutral-content">
+            {subtitle}
+          </span>
+        )
+      }
+      <h1
+        class="__title text-4xl lg:text-6xl !leading-tight font-black bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
+      >
+        {title}
+      </h1>
+    </header>
     <slot />
   </article>
 </Layout>

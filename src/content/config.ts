@@ -57,11 +57,35 @@ export const collections = {
       }),
   }),
 
+  tentang: defineCollection({
+    type: 'content',
+    schema: z.object({
+      title: z.string(),
+      subtitle: z.string().optional(),
+      description: z.string().optional(),
+    }),
+  }),
+
+  team: defineCollection({
+    type: 'data',
+    schema: ({ image }) =>
+      z.object({
+        members: z.array(
+          z.object({
+            name: z.string(),
+            pos: z.string(),
+            image: image(),
+          })
+        ),
+      }),
+  }),
+
   page: defineCollection({
     type: 'content',
     schema: ({ image }) =>
       z.object({
         title: z.string(),
+        subtitle: z.string().optional(),
         description: z.string().optional(),
         image: image().optional(),
       }),
