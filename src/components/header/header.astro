@@ -11,6 +11,6 @@ const menu = await getEntry('menu', 'menu')
 const { logo } = Astro.props
 ---
 
-<header class="px-4">
+<header class="px-8">
   <HeaderComp menu={menu} logo={logo} client:idle />
 </header>

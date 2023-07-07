@@ -8,9 +8,9 @@ const HeaderComp: FC<{
   menu: CollectionEntry<'menu'>
   logo: GetImageResult
 }> = ({ menu, logo }) => (
-  <div className="navbar bg-base-100">
+  <div className="navbar bg-base-100 max-w-screen-xl mx-auto px-0">
     <div className="flex-1">
-      <a className="btn btn-ghost -ml-6" href="/">
+      <a className="btn btn-ghost pl-0" href="/">
         <img
           src={logo.src}
           className="w-auto h-[35px] object-contain"

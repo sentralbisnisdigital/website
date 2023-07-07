@@ -9,6 +9,14 @@ export const collections = {
         slogan: z.string(),
         description: z.string().optional(),
         logo: image(),
+        legal: z.object({
+          name: z.string().optional(),
+          npwp: z.string().optional(),
+          address: z.string().optional(),
+          phone: z.string().optional(),
+          email: z.string().email().optional(),
+          website: z.string().url().optional(),
+        }),
       }),
   }),
   menu: defineCollection({

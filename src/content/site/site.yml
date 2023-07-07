@@ -4,3 +4,13 @@ description:
   Sentral Bisnis Digital adalah perusahaan yang bergerak pada pembuatan dan pemeliharaan perangkat lunak,
   pengadaan perangkat keras, instalasi jaringan, serta konsultan IT.
 logo: '~/assets/logo.png'
+legal:
+  name: CV. Sentral Bisnis Digital
+  npwp: '92.032.815.0-712.000'
+  address: |
+    Jl. Cristopel Mihing No.79
+    Kel. Baamang Tengah - Kec. Baamang
+    Sampit, Kalimantan Tengah 74312
+  phone: '081517469117'
+  email: marketing@sbdigital.id
+  website: https://www.sbdigital.id

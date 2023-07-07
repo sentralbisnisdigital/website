@@ -1,0 +1,17 @@
+---
+import FooterComp from './footer'
+import { getImage } from 'astro:assets'
+import { getEntry } from 'astro:content'
+import FooterLogo from '~/assets/logo-inverse.png'
+
+const site = await getEntry('site', 'site')
+const FooterLogoProps = await getImage({
+  src: FooterLogo,
+  width: 350,
+  height: 70,
+})
+---
+
+<footer class="bg-neutral text-neutral-content">
+  <FooterComp logo={FooterLogoProps} site={site} />
+</footer>

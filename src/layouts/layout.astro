@@ -1,9 +1,11 @@
 ---
 import BaseLayout from './base.astro'
-import Header from '~/components/header'
 import { getEntry } from 'astro:content'
 import { getImage } from 'astro:assets'
 import { SEO } from 'astro-seo'
+
+import Header from '~/components/header'
+import Footer from '~/components/footer'
 
 import '@fontsource-variable/red-hat-display'
 import '@fontsource-variable/inter'
@@ -39,9 +41,9 @@ const { title, description, isPrivate } = Astro.props
   <!-- Body -->
   <Fragment>
     <Header logo={logo} />
-    <main class="flex-1 px-4">
+    <main class="flex-1 px-8">
       <slot />
     </main>
-    <footer></footer>
+    <Footer />
   </Fragment>
 </BaseLayout>
