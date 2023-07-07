@@ -4,7 +4,6 @@ import {
   pageCache,
   imageCache,
   staticResourceCache,
-  offlineFallback,
 } from 'workbox-recipes'
 import { registerRoute } from 'workbox-routing'
 import { CacheFirst } from 'workbox-strategies'
@@ -22,9 +21,6 @@ clientsClaim()
 pageCache()
 staticResourceCache()
 imageCache()
-offlineFallback({
-  pageFallback: 'offline/index.html',
-})
 
 registerRoute(
   ({ request }) => request.destination === 'font',

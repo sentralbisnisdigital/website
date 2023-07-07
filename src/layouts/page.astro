@@ -1,0 +1,31 @@
+---
+import Layout from './layout.astro'
+
+export interface Props {
+  title: string
+  description?: string
+}
+
+const { title, description } = Astro.props
+---
+
+<Layout title={title} description={description}>
+  <article
+    class="prose 2xl:peose-lg max-w-screen-md mx-auto py-8 md:py-16 2xl:py-24"
+  >
+    <h1
+      class="__title text-4xl lg:text-6xl !leading-tight font-black bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary my-16 md:my-24"
+    >
+      {title}
+    </h1>
+    <slot />
+  </article>
+</Layout>
+
+<style lang="scss">
+  @use '../styles/fonts';
+
+  .__title {
+    @extend %heading;
+  }
+</style>

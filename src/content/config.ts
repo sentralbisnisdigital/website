@@ -19,6 +19,7 @@ export const collections = {
         }),
       }),
   }),
+
   menu: defineCollection({
     type: 'data',
     schema: z.object({
@@ -53,6 +54,16 @@ export const collections = {
             })
           ),
         }),
+      }),
+  }),
+
+  page: defineCollection({
+    type: 'content',
+    schema: ({ image }) =>
+      z.object({
+        title: z.string(),
+        description: z.string().optional(),
+        image: image().optional(),
       }),
   }),
 }

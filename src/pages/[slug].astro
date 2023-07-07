@@ -1,0 +1,21 @@
+---
+import PageLayout from '~/layouts/page.astro'
+import { getCollection } from 'astro:content'
+
+export const getStaticPaths = async () => {
+  const pages = await getCollection('page')
+  return pages.map((entry) => ({
+    params: {
+      slug: entry.slug,
+    },
+    props: { entry },
+  }))
+}
+
+const { entry } = Astro.props
+const { Content } = await entry.render()
+---
+
+<PageLayout title={entry.data.title} description={entry.data.description}>
+  <Content />
+</PageLayout>

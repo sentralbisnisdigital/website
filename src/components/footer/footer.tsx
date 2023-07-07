@@ -37,7 +37,14 @@ const FooterLegalSection: FC<{
     />
     <h3 className="footer-title">{site.data.legal.name}</h3>
     <span>NPWP: {site.data.legal.npwp}</span>
-    <>{parse(marked.parse(site.data.legal.address as string))}</>
+    <>
+      {parse(
+        marked.parse(site.data.legal.address as string, {
+          mangle: false,
+          headerIds: false,
+        })
+      )}
+    </>
     <a
       className="flex flex-row items-center gap-[2px] link link-hover"
       href={`https://wa.me/62${site.data.legal.phone?.substring(1)}`}

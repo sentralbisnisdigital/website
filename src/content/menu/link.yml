@@ -1,8 +1,8 @@
 title: Link
 items:
-  - title: Link 1
-    href: '#'
-  - title: Link 2
-    href: '#'
-  - title: Link 3
-    href: '#'
+  - title: Kebijakan Privasi
+    href: '/privasi'
+  - title: Informasi Legal
+    href: '/legal'
+  - title: Sitemap
+    href: '/sitemap-index.xml'
