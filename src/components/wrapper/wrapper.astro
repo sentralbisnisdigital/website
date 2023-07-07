@@ -1,0 +1,8 @@
+---
+// Wrapper <div> for use inside Markdoc
+const { class: className } = Astro.props
+---
+
+<div class={className}>
+  <slot />
+</div>

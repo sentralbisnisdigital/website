@@ -1,10 +1,6 @@
 import { cleanupOutdatedCaches, precacheAndRoute } from 'workbox-precaching'
 import { clientsClaim } from 'workbox-core'
-import {
-  pageCache,
-  imageCache,
-  staticResourceCache,
-} from 'workbox-recipes'
+import { pageCache, imageCache, staticResourceCache } from 'workbox-recipes'
 import { registerRoute } from 'workbox-routing'
 import { CacheFirst } from 'workbox-strategies'
 import { CacheableResponsePlugin } from 'workbox-cacheable-response'
