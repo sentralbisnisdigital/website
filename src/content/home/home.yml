@@ -1,0 +1,31 @@
+hero:
+  title: Siap bertransformasi digital? Kami bantu.
+  content: |
+    Kami adalah tim pengembangan perangkat lunak berbasis web dan mobile berbasis di Sampit, Kalimantan Tengah. Kami berpengalaman mentransformasikan visi digital, dipadukan dengan skill serta teknologi terbaru dan terdepan, menghasilkan produk yang terbaik dan tercanggih.
+
+expertises:
+  title: Keahlian Kami
+  content: |
+    Tim kami adalah yang terbaik di bidang masing-masing.
+  items:
+    - title: Desain & Pengembangan Web
+      order: 1
+      isWide: true
+      content: |
+        Desain dan Development Web adalah inti dari keahlian kami. Kami berpengalaman membuat website yang cantik, menarik, namun tetap mudah digunakan, cepat di akses di segala kondisi jaringan, dan aman dari serangan siber.
+    - title: Hardware & Jaringan
+      order: 2
+      content: |
+        Sebagian produk aplikasi kami didesain untuk dipasang sepaket bersama perangkat keras yang melengkapi fungsinya. Kami melayani jasa pemasangan hardware, beserta jaringan yang dibutuhkan agar aplikasi kami dapat berjalan dengan sempurna.
+    - title: Pengembangan API
+      order: 3
+      content: |
+        Sebagai pengembang aplikasi modern, tentu tidak lengkap jika tidak didukung dengan API yang mudah diakses dan aman. Hampir semua aplikasi kami dikembangkan bersama API kustom; karena API adalah bagian yang menjadi inti keberlangsungan aplikasi buatan kami.
+    - title: Search Engine Optimization
+      order: 4
+      content: |
+        Layanan online anda, tentu harus mudah ditemukan di Internet. Kami ahli dalam mengoptimalkan mesin pencari, dengan menggunakan tag dan keyword yang tepat. Kami juga mematuhi Core Web Vitals, instrumen di era baru untuk meningkatkan pengalaman pengguna anda dan tentunya, disukai mesin pencari.
+    - title: Perawatan Berkala
+      order: 5
+      content: |
+        Setiap produk kami selalu dimonitoring dan dirawat secara berkala, untuk menghindari kerusakan dan menutupi celah-celah keamanan yang dapat membahayakan bisnis dan pengguna Anda. Kami menjamin setiap aplikasi buatan kami, 100% up.

@@ -1,0 +1,10 @@
+---
+import { getEntry } from 'astro:content'
+import ExpertiseComp from './expertise'
+
+const home = await getEntry('home', 'home')
+---
+
+<section class="bg-gradient-to-br from-primary to-secondary -mx-4">
+  <ExpertiseComp entry={home} />
+</section>

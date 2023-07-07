@@ -1,10 +1,10 @@
-import type { FC, PropsWithChildren } from 'react'
+import type { FC } from 'react'
 import style from './hero.module.scss'
 
-const HeroComp: FC<PropsWithChildren<{ title: string; subtitle: string }>> = ({
+const HeroComp: FC<{ title: string; subtitle: string; content: string }> = ({
   title,
   subtitle,
-  children,
+  content,
 }) => (
   <article className="flex flex-col gap-2 max-w-screen-md 2xl:max-w-screen-lg mx-auto py-8 md:py-16 2xl:py-24">
     <span className="block uppercase text-sm md:text-lg font-bold text-neutral-content">
@@ -15,7 +15,7 @@ const HeroComp: FC<PropsWithChildren<{ title: string; subtitle: string }>> = ({
     >
       {title}
     </h1>
-    <>{children}</>
+    <p className="md:text-2xl !leading-relaxed">{content}</p>
     <div className="flex flex-row flex-wrap items-center gap-4 mt-8">
       <a className="btn btn-primary md:btn-lg" href="#">
         Kontak kami
