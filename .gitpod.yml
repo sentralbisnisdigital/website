@@ -3,5 +3,4 @@ image:
 
 tasks:
   - init: pnpm install
-      pnpm install
     command: pnpm dev
