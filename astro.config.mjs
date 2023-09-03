@@ -5,8 +5,6 @@ import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
 import mdx from '@astrojs/mdx'
-import compress from 'astro-compress'
-import critters from 'astro-critters'
 
 // Vite plugins
 import Icons from 'unplugin-icons/vite'
@@ -19,8 +17,6 @@ export default defineConfig({
   integrations: [
     react(),
     mdx(),
-    compress(),
-    critters(),
     sitemap(),
     AstroPWA({
       strategies: 'injectManifest',
