@@ -1,0 +1,39 @@
+---
+import Layout from '~/layouts/layout.astro'
+import Team from '~/components/tentang/team'
+import { getEntry } from 'astro:content'
+
+const tentang = await getEntry('tentang', 'tentang')
+const { Content } = await tentang.render()
+---
+
+<Layout title={tentang.data.title} description={tentang.data.description}>
+  <article
+    class="prose prose-lg xl:prose-xl max-w-screen-md mx-auto py-16 lg:py-24"
+  >
+    <header class="mb-16 md:mb-24">
+      {
+        (
+          <span class="text-base lg:text-lg font-bold uppercase text-neutral-content leading-tight">
+            {tentang.data.subtitle}
+          </span>
+        )
+      }
+      <h1
+        class="__title text-4xl lg:text-6xl !leading-tight font-black bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary"
+      >
+        {tentang.data.title}
+      </h1>
+    </header>
+    <Content />
+  </article>
+  <Team />
+</Layout>
+
+<style lang="scss">
+  @use '../styles/fonts';
+
+  .__title {
+    @extend %heading;
+  }
+</style>

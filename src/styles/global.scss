@@ -1,1 +1,7 @@
 @use './tw';
+@use './fonts';
+
+body {
+  @extend %body;
+  min-height: 100dvh;
+}

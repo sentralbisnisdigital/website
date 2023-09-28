@@ -1,0 +1,16 @@
+---
+import type { GetImageResult } from 'astro'
+import HeaderComp from './header'
+import { getEntry } from 'astro:content'
+
+export interface Props {
+  logo: GetImageResult
+}
+
+const menu = await getEntry('menu', 'menu')
+const { logo } = Astro.props
+---
+
+<header class="px-8">
+  <HeaderComp menu={menu} logo={logo} client:idle />
+</header>

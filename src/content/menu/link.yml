@@ -1,0 +1,8 @@
+title: Link
+items:
+  - title: Kebijakan Privasi
+    href: '/privasi'
+  - title: Informasi Legal
+    href: '/legal'
+  - title: Sitemap
+    href: '/sitemap-index.xml'

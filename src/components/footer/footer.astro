@@ -1,0 +1,25 @@
+---
+import FooterComp from './footer'
+import { getImage } from 'astro:assets'
+import { getEntry } from 'astro:content'
+import FooterLogo from '~/assets/logo-inverse.png'
+
+const site = await getEntry('site', 'site')
+const FooterLogoProps = await getImage({
+  src: FooterLogo,
+  width: 350,
+  height: 70,
+})
+
+const menuUtama = await getEntry('menu', 'menu')
+const menuPortofolio = await getEntry('menu', 'portofolio')
+const menuLink = await getEntry('menu', 'link')
+---
+
+<footer class="footer bg-neutral text-neutral-content px-8 py-16">
+  <FooterComp
+    logo={FooterLogoProps}
+    site={site}
+    menus={[menuUtama, menuPortofolio, menuLink]}
+  />
+</footer>

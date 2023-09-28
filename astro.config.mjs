@@ -1,57 +1,38 @@
-import { defineConfig } from 'astro/config'
+import { defineConfig, sharpImageService } from 'astro/config'
 
 // Astro integrations
 import react from '@astrojs/react'
 import sitemap from '@astrojs/sitemap'
 import AstroPWA from '@vite-pwa/astro'
-import mdx from '@astrojs/mdx'
+import markdoc from '@astrojs/markdoc'
+import vercel from '@astrojs/vercel/serverless'
 
 // Vite plugins
 import Icons from 'unplugin-icons/vite'
 import svgr from 'vite-plugin-svgr'
-import yaml from '@modyfi/vite-plugin-yaml'
+
+// Other imports
+import manifest from './src/includes/manifest.json' assert { type: 'json' }
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://www.sentralbisnisdigital.co.id',
+  site: 'https://www.sbdigital.id',
   integrations: [
     react(),
-    mdx(),
+    markdoc(),
     sitemap(),
     AstroPWA({
+      disable: true,
       strategies: 'injectManifest',
-      srcDir: 'src/assets',
+      srcDir: 'src/includes',
       filename: 'sw.ts',
       registerType: 'autoUpdate',
-      manifest: {
-        name: 'Sentral Bisnis Digital',
-        short_name: 'Sentral Bisnis Digital',
-        description: '',
-        theme_color: '#ffffff',
-        icons: [
-          {
-            src: 'pwa-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-          {
-            src: 'pwa-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-            purpose: 'any maskable',
-          },
-        ],
-      },
+      manifest,
     }),
   ],
+
   vite: {
     plugins: [
-      yaml(),
       svgr(),
       Icons({
         compiler: 'jsx',
@@ -59,4 +40,13 @@ export default defineConfig({
       }),
     ],
   },
+  experimental: {
+    assets: true,
+  },
+  image: {
+    service: sharpImageService(),
+  },
+  compressHTML: true,
+  output: 'hybrid',
+  adapter: vercel(),
 })

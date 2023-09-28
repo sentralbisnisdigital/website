@@ -1,0 +1,15 @@
+---
+import HeroComp from './hero'
+import { getEntry } from 'astro:content'
+
+const site = await getEntry('site', 'site')
+const home = await getEntry('home', 'home')
+---
+
+<section>
+  <HeroComp
+    title={home.data.hero.title}
+    subtitle={site.data.title}
+    content={home.data.hero.content}
+  />
+</section>
