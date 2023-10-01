@@ -45,7 +45,7 @@ dependencies:
     specifier: 18.2.18
     version: 18.2.18
   '@types/react-dom':
-    specifier: ^18.2.7
+    specifier: 18.2.7
     version: 18.2.7
   '@vite-pwa/astro':
     specifier: 0.1.1
