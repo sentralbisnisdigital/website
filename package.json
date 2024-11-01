@@ -46,7 +46,7 @@
     "typescript": "5.2.2",
     "unplugin-icons": "0.17.0",
     "vite-plugin-pwa": "0.16.5",
-    "vite-plugin-svgr": "3.3.0",
+    "vite-plugin-svgr": "4.3.0",
     "workbox-cacheable-response": "7.0.0",
     "workbox-core": "7.0.0",
     "workbox-expiration": "7.0.0",
