@@ -99,8 +99,8 @@ dependencies:
     specifier: 0.16.5
     version: 0.16.5(vite@4.4.9)(workbox-build@7.0.0)(workbox-window@7.0.0)
   vite-plugin-svgr:
-    specifier: 3.3.0
-    version: 3.3.0(rollup@2.79.1)(typescript@5.2.2)(vite@4.4.9)
+    specifier: 4.5.0
+    version: 4.5.0(rollup@2.79.1)(typescript@5.2.2)(vite@4.4.9)
   workbox-cacheable-response:
     specifier: 7.0.0
     version: 7.0.0
@@ -3005,18 +3005,18 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@rollup/pluginutils@5.0.4(rollup@2.79.1):
-    resolution: {integrity: sha512-0KJnIoRI8A+a1dqOYLxH8vBf8bphDmty5QvIm2hqm7oFCFYKCAZWWd2hXgMibaPsNDhI0AtpYfQZJG47pt/k4g==}
+  /@rollup/pluginutils@5.3.0(rollup@2.79.1):
+    resolution: {integrity: sha512-5EdhGZtnu3V88ces7s53hhfK5KSASnJZv8Lulpc04cWO3REESroJXg73DFsOmgbU2BhwV0E20bu2IDZb3VKW4Q==}
     engines: {node: '>=14.0.0'}
     peerDependencies:
-      rollup: ^1.20.0||^2.0.0||^3.0.0
+      rollup: ^1.20.0||^2.0.0||^3.0.0||^4.0.0
     peerDependenciesMeta:
       rollup:
         optional: true
     dependencies:
       '@types/estree': 1.0.2
       estree-walker: 2.0.2
-      picomatch: 2.3.1
+      picomatch: 4.0.3
       rollup: 2.79.1
     dev: false
 
@@ -6312,6 +6312,11 @@ packages:
     engines: {node: '>=8.6'}
     dev: false
 
+  /picomatch@4.0.3:
+    resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
+    engines: {node: '>=12'}
+    dev: false
+
   /pify@2.3.0:
     resolution: {integrity: sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==}
     engines: {node: '>=0.10.0'}
@@ -7349,6 +7354,7 @@ packages:
   /source-map@0.8.0-beta.0:
     resolution: {integrity: sha512-2ymg6oRBpebeZi9UUNsgQ89bhx01TcTkmNTGnNO88imTmbSgy4nfujrgVEFKWpMTEGA11EDkTt7mqObTPdigIA==}
     engines: {node: '>= 8'}
+    deprecated: The work that was done in this beta branch won't be included in future versions
     dependencies:
       whatwg-url: 7.1.0
     dev: false
@@ -8058,12 +8064,12 @@ packages:
       - supports-color
     dev: false
 
-  /vite-plugin-svgr@3.3.0(rollup@2.79.1)(typescript@5.2.2)(vite@4.4.9):
-    resolution: {integrity: sha512-vWZMCcGNdPqgziYFKQ3Y95XP0d0YGp28+MM3Dp9cTa/px5CKcHHrIoPl2Jw81rgVm6/ZUNONzjXbZQZ7Kw66og==}
+  /vite-plugin-svgr@4.5.0(rollup@2.79.1)(typescript@5.2.2)(vite@4.4.9):
+    resolution: {integrity: sha512-W+uoSpmVkSmNOGPSsDCWVW/DDAyv+9fap9AZXBvWiQqrboJ08j2vh0tFxTD/LjwqwAd3yYSVJgm54S/1GhbdnA==}
     peerDependencies:
-      vite: ^2.6.0 || 3 || 4
+      vite: '>=2.6.0'
     dependencies:
-      '@rollup/pluginutils': 5.0.4(rollup@2.79.1)
+      '@rollup/pluginutils': 5.3.0(rollup@2.79.1)
       '@svgr/core': 8.1.0(typescript@5.2.2)
       '@svgr/plugin-jsx': 8.1.0(@svgr/core@8.1.0)
       vite: 4.4.9(sass@1.68.0)
@@ -8384,6 +8390,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
