@@ -11,9 +11,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout your repository using git
-        uses: actions/checkout@v3
+        uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3.7.0
       - name: Run checks
-        uses: radenpioneer/astro-check@v0
+        uses: radenpioneer/astro-check@abb4ec095ab8b900fb29fb975dafd57fa4db38d8 # v0.1.2
         with:
           check-command: 'check'
 
@@ -21,17 +21,17 @@ jobs:
     runs-on: ubuntu-latest
     needs: [check]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3.7.0
 
       - name: Install Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
         with:
-          node-version: 18
+          node-version: 18.20.8
 
       - name: Setup PNPM
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@eae0cfeb286e66ffb5155f1a79b90583a127a68b # v2.4.1
         with:
-          version: 8.x.x
+          version: 8.15.9
           run_install: false
 
       - name: Get pnpm store directory
@@ -40,7 +40,7 @@ jobs:
         run: |
           echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
 
-      - uses: actions/cache@v4
+      - uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
         name: Setup pnpm cache
         with:
           path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
